@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../static/css/checkout.css" />
+
+    <!-- box-icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+
+<body>  
+    <div class="heading">
+        <div class="heading-left">
+            <a href="#"><img src="../static/images/Logo/Green_room_6.png" alt=""></a>
+        </div>
+        <div class="heading-right">
+            <a href="#"><i class='bx bx-shopping-bag'></i></a>
+        </div>
+    </div>
+    <div class="devider"></div>
+    <div class="checkout-container">
+        <div class="checkout-left">
+            <div class="account"> 
+                <div class="box">
+                    <p>Liên hệ</p>
+                    <a href="">Đăng nhập</a>
+                </div>
+                <input type="email" id="email" placeholder="Email">
+                <div class="group">
+                    <input type="checkbox" id="email-news" name="email-news">
+                    <label for="email-news">Gửi email cho tôi với tin tức và ưu đãi</label>     
+                </div>
+            </div>
+            <div class="delivery">
+                <p>Vận chuyển</p> 
+                <div class="name-fields">
+                    <input type="text" id="first-name" name="first-name" placeholder="Tên">
+                    <input type="text" id="last-name" name="last-name" placeholder="Họ">
+                </div>
+                <div class="location-fields">
+                    <select name="ls_province" class="ls_province"></select>
+                    <select name="ls_district" class="ls_district"></select>
+                    <select name="ls_ward" class="ls_ward"></select>
+                </div>
+                <input type="text" id="house-number" name="house-number" placeholder="Tên đường, Số nhà">
+                <input type="text" id="phone" name="phone" placeholder="Số điện thoại">
+                <div class="group">
+                    <input type="checkbox" id="save-address" name="save-address">
+                    <label for="save-address">Lưu thông tin cho lần tiếp theo</label>
+                </div>
+            </div>
+            <div class="payment">
+                <p>Thanh toán</p>
+                <label for="payment-method">Tất cả các giao dịch đều được bảo mật và mã hóa.</label>
+                <div class="payment-method">
+                    <!-- credit card -->
+                    <div class="group credit-card-group">
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                        <label for="credit-card">Thẻ tín dụng</label>
+                    </div>
+                    <div class="credit-card-info">
+                        <input type="text" id="card-number" name="card-number" placeholder="Số thẻ">
+                        <div class="card-expiry-cvv">
+                            <input type="text" id="card-expiry" name="card-expiry" placeholder="Ngày hết hạn (MM/YY)">
+                            <input type="text" id="card-cvv" name="card-cvv" placeholder="Mã bảo mật">
+                        </div>
+                        <input type="text" id="card-name" name="card-name" placeholder="tên trên thẻ">
+                    </div>
+                    <!-- momo -->
+                    <div class="group momo-group" id="momo-group">
+                        <input type="radio" id="momo" name="payment-method" value="momo">
+                        <label for="momo">MoMo</label>
+                    </div>
+                    <div class="momo-info">
+                        <p>Sau khi nhấp vào "Thanh toán bằng MoMo", bạn sẽ được chuyển hướng đến MoMo để hoàn tất giao dịch mua hàng của mình một cách an toàn.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="pay-now">Pay now</button>
+        </div>
+        <div class="checkout-right">
+            <div class="order-summary">
+                <div class="order-item">
+                    <img src="../static/images/products/plant.png" alt="Monstera 'Split-Leaf'">
+                    <div class="order-details">
+                        <p class="order-name">Monstera 'Split-Leaf'</p>
+                        <p class="order-type">Chậu: 4 inch, màu trắng</p>
+                    </div>
+                    <p class="order-price">$19.99</p>
+                </div>
+                <div class="order-item">
+                    <img src="../static/images/products/plant.png" alt="Monstera 'Split-Leaf'">
+                    <div class="order-details">
+                        <p class="order-name">Monstera 'Split-Leaf'</p>
+                        <p class="order-type">Chậu: 4 inch, màu trắng</p>
+                    </div>
+                    <p class="order-price">$19.99</p>
+                </div>
+            </div>
+            <div class="devider">   </div>
+            <div class="order-totals">
+                <div class="subtotal">
+                    <p>Subtotal: </p>
+                    <span>$19.99</span>
+                </div>
+                <div class="shipping">
+                    <p>Shipping: </p>
+                    <span>Enter shipping address</span>
+                </div>
+                <div class="total">
+                    <p>Total: </p>
+                    <span>$19.99</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- vietnam local selector -->
+    <script src="../static/js/vietnamlocalselector.js"></script>
+    <!-- checkout.js -->
+    <script src="../static/js/checkout.js"></script>
+</body>
+
+</html>

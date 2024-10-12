@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: green_room
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/green_room
+    username: root
+    password: Vinhhung03#
+  jpa:
+    hibernate:
+      ddl-auto: none
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+jwt:
+  privateKey: SF8RvR6MqTE+Qf/OwgDL3t9I9DGvtHRt2sQhTxpAFfQ=
+
+fileUpload:
+  root-path: src/main/resources/static/images/products

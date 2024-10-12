@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product detail</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../static/css/product_detai.css" />
+    <link rel="stylesheet" href="../static/css/header.css" />
+    <link rel="stylesheet" href="../static/css/footer.css" />
+
+    <!-- box-icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- header navigation-bar -->
+    <header>
+        <a href="../templates/home.html" class="logo">
+            <img src="../static/images/Logo/Green_room_6.png" alt="" />
+            <p>GREEN<br />ROOM</p>
+        </a>
+        <div class="nav-bar">
+            <div class="option home">
+                <a href="../templates/home.html" class="content">Home</a>
+            </div>
+            <div class="option categories">
+                <div class="dropdown">
+                    <a href="#categories" class="content">Categories</a>
+                    <div class="dropdown-content" id="dropdown_content_categories">
+                        <a href="#all-plants">All plants</a>
+                        <a href="#new-arrivals">New arrivals</a>
+                        <a href="#trailing-&-vining-plants">Trailing & Vining plants</a>
+                        <a href="#flowering-plants">Flowering plants</a>
+                        <a href="#aquatic-plants">Aquatic plants</a>
+                        <a href="#rare-plants">Rare plants</a>
+                        <a href="#succulents-&-caci">Succulents & Caci</a>
+                    </div>
+                </div>
+            </div>
+            <div class="option products">
+                <a href="../templates/products.html" class="content" id="products">Products</a>
+            </div>
+            <div class="option abount">
+                <a href="#abount" class="content">Abount</a>
+            </div>
+            <div class="option customer">
+                <a href="#customer" class="content">Customer</a>
+            </div>
+        </div>
+
+        <div class="search">
+            <div class="box">
+                <input type="text" placeholder="Search" />
+                <a href=""><i class='bx bx-search'></i></a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div>
+                <a href="#" id="account_image"><img src="../static/images/user.jpg" alt="" /></a>
+            </div>
+            <div class="dropdown">
+                <div>
+                    <i class='bx bx-chevron-down' ></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="../templates/cart.html" id="mycart_button">My Cart</a>
+                    <a href="../templates/signin.html" id="login_button">Login</a>
+                    <a href="#" id="setting_button">Setting</a>
+                    <a href="#" id="logout_button">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <div style="height: 120px"></div>
+
+    <!-- main content -->
+    <div class="main-body">
+        <div class="product" id="product_detail">
+            <div class="image-side">
+                <div class="main-image" >
+                    <img src="../static/images/products/plant.png" alt="" id="main_image">
+                </div>
+                <div class="other-image" id="orther_image">
+                    <img src="../static/images/products/plant.png" alt="">
+                    <img src="../static/images/products/plant2.png" alt="">
+                    <img src="../static/images/products/plant2.png" alt="">
+                    <img src="../static/images/products/plant2.png" alt="">
+                    <img src="../static/images/products/plant2.png" alt="">
+                    <img src="../static/images/products/plant2.png" alt="">
+                    <img src="../static/images/products/plant2.png" alt="">
+                    <img src="../static/images/products/plant2.png" alt="">
+                    <img src="../static/images/products/plant2.png" alt="">
+                    <img src="../static/images/products/plant2.png" alt="">
+                </div>
+            </div>
+            <!-- detail infomation -->
+            <div class="infomation-side">
+                <p class="name" id="detail_name">Monstera 'Split-Leaf'</p>
+                <p class="price" id="productPrice">$19.99</p>
+                <p class="option">Size</p>
+                <div class="option-select select-size" id="detail_size">
+                    <span data-id="3">4 inch</span>
+                    <span data-id="4">6 inch</span>
+                    <span data-id="5">8 inch</span>
+                    <span data-id="6">10 inch</span>
+                </div>
+                <p class="option" id="potType_option">Pot Type</p>
+                <div class="option-select select-pot-type" id="detail_potType">
+                    <span data-id="1">Chậu ươm</span>
+                    <span data-id="2">Chậu màu đen</span>
+                    <span data-id="3">Chậu màu trắng</span>
+                </div>
+                <p class="stockcount" id="detail_stock">GreenRoom: <span>99</span></p>
+                <input type="text" class="quantity" id="quantity" placeholder="quantity">
+                <!-- add product to cart -->
+                <button class="buy add-to-cart" id="add_to_cart">Add to cart</button>
+                <!-- buy product now -->
+                <button class="buy buy-now" id="buy_now">Buy now</button>
+                <!-- SOLD OUT -->
+                <button class="slod-out" id="sold_out">SOLD OUT</button>
+
+                <ul style="list-style-type: circle;">
+                    <li id="detail_botanicalName"><span>Botanical Name:</span> Philodendron Monstera Deliciosa</li>
+                    <li id="detail_commonName"><span>Common Name:</span> Swiss Cheese or Hurricane Plant, Fruit Salad Plant , Monstera</li>
+                    <li id="detail_description"><span>Description:</span> Native to the tropical forests of Central and South America, these plants have glossy, heart shaped leaves which develops its unique splits in its maturity. It is a climbing, evergreen perennial vine that is perhaps most noted for its large perforated leaves on thick plant stems and its long cord-like aerial roots.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-products">
+            <p class="title">Top Selling</p>
+            <div class="products">
+                <div class="product-item">
+                    <img src="../static/images/products/plant.png" alt="">
+                    <p class="name">Monstera 'Split-Leaf'</p>
+                    <p class="price">$19.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="../static/images/products/plant.png" alt="">
+                    <p class="name">Monstera 'Split-Leaf'</p>
+                    <p class="price">$19.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="../static/images/products/plant.png" alt="">
+                    <p class="name">Monstera 'Split-Leaf'</p>   
+                    <p class="price">$19.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="../static/images/products/plant.png" alt="">
+                    <p class="name">Monstera 'Split-Leaf'</p>   
+                    <p class="price">$19.99</p>
+                </div>
+                <div class="product-item">
+                    <img src="../static/images/products/plant.png" alt="">
+                    <p class="name">Monstera 'Split-Leaf'</p>
+                    <p class="price">$19.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="row1">
+            <div class="column company-name">
+                <p class="title">GREEN ROOM</p>
+                <div class="subdevider"></div>
+                <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum
+                    sapiente, nisi enim necessitatibus architecto quisquam culpa
+                    corporis voluptates! Facilis quas dolorem distinctio iste error
+                    dolor necessitatibus magnam placeat molestiae!
+                </p>
+            </div>
+            <div class="column products">
+                <p class="title">PRODUCTS</p>
+                <div class="subdevider"></div>
+                <div class="content">
+                    <a href="#new-arrivals" class="link">New arrivals</a>
+                    <a href="#trailing-&-vining-plants" class="link">Trailing & Vining plants</a>
+                    <a href="#flowering-plants" class="link">Flowering plants</a>
+                    <a href="#aquatic-plants" class="link">Aquatic plants</a>
+                    <a href="#rare-plants" class="link">Rare plants</a>
+                    <a href="#succulents-&-caci" class="link">Succulents & Caci</a>
+                </div>
+            </div>
+            <div class="column useful-links">
+                <p class="title">USEFUL LINKS</p>
+                <div class="subdevider"></div>
+                <div class="content">
+                    <a href="#" class="link">Your account</a>
+                    <a href="#" class="link">Become an Affiliate</a>
+                    <a href="#" class="link">Shipping Rates</a>
+                    <a href="#" class="link">Help</a>
+                </div>
+            </div>
+            <div class="column contact">
+                <p class="title">CONTACT</p>
+                <div class="subdevider"></div>
+                <div class="content">
+                    <div class="subcontent">
+                        <i class="bx bx-home"></i>
+                        <p>132, Đông Hòa, Dĩ An, Bình Dương</p>
+                    </div>
+                    <div class="subcontent">
+                        <i class="bx bx-envelope"></i>
+                        <p>info@gmail.com</p>
+                    </div>
+                    <div class="subcontent">
+                        <i class="bx bx-phone"></i>
+                        <p>+84 123 456 789</p>
+                    </div>
+                    <div class="subcontent">
+                        <i class="bx bx-printer"></i>
+                        <p>+84 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="devider"></div>
+
+        <div class="row2">
+            <div class="copyright">
+                <i class="bx bx-copyright"></i>
+                <p>2024 Copyright: GreenRoom.com</p>
+            </div>
+            <div class="social">
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-twitter"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-google"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- product_detail.js -->
+    <script src="../static/js/product_detail.js"></script>
+    <script src="../static/serviceJs/product_detail.js"></script>
+    <script src="../static/serviceJs/header.js"></script>
+</body>
+
+</html>

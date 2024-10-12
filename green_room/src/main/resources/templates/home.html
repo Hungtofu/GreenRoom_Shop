@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="stylesheet" href="../static/css/header.css" />
+    <link rel="stylesheet" href="../static/css/footer.css" />
+
+    <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- header navigation-bar -->
+    <header>
+        <a href="../templates/home.html" class="logo">
+            <img src="../static/images/Logo/Green_room_6.png" alt="" />
+            <p>GREEN<br />ROOM</p>
+        </a>
+        <div class="nav-bar">
+            <div class="option home">
+                <a href="../templates/home.html" class="content">Home</a>
+            </div>
+            <div class="option categories">
+                <div class="dropdown">
+                    <a href="#categories" class="content">Categories</a>
+                    <div class="dropdown-content" id="dropdown_content_categories">
+                        <a href="#all-plants">All plants</a>
+                        <a href="#new-arrivals">New arrivals</a>
+                        <a href="#trailing-&-vining-plants">Trailing & Vining plants</a>
+                        <a href="#flowering-plants">Flowering plants</a>
+                        <a href="#aquatic-plants">Aquatic plants</a>
+                        <a href="#rare-plants">Rare plants</a>
+                        <a href="#succulents-&-caci">Succulents & Caci</a>
+                    </div>
+                </div>
+            </div>
+            <div class="option products">
+                <a href="../templates/products.html" class="content" id="products">Products</a>
+            </div>
+            <div class="option abount">
+                <a href="#abount" class="content">Abount</a>
+            </div>
+            <div class="option customer">
+                <a href="#customer" class="content">Customer</a>
+            </div>
+        </div>
+
+        <div class="search">
+            <div class="box">
+                <input type="text" placeholder="Search" />
+                <a href=""><i class='bx bx-search'></i></a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div>
+                <a href="#" id="account_image"><img src="../static/images/user.jpg" alt="" /></a>
+            </div>
+            <div class="dropdown">
+                <div>
+                    <i class='bx bx-chevron-down' ></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="../templates/cart.html" id="mycart_button">My Cart</a>
+                    <a href="../templates/signin.html" id="login_button">Login</a>
+                    <a href="#" id="setting_button">Setting</a>
+                    <a href="#" id="logout_button">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <div style="height: 120px"></div>
+
+    <!-- slider -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="../static/images/categories/potted-flowering-plants.jpg" style="width: 100%" />
+                <div class="option">
+                    <p class="text">Flowering plants</p>
+                    <a href="#" class="more-btn">Buy now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../static/images/categories/aquatic-plants.jpg" style="width: 100%" />
+                <div class="option">    
+                    <p class="text">Aquatic plants</p>
+                    <a href="#" class="more-btn">Buy now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../static/images/categories/succulent-caci.jpg" style="width: 100%" />
+                <div class="option">
+                    <p class="text">Succulents & Caci plants</p>
+                    <a href="#" class="more-btn">Buy now</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../static/images/categories/trailing-vining-plants.jpg" style="width: 100%" />
+                <div class="option">
+                    <p class="text">Trailing-Vining plants</p>
+                    <a href="#" class="more-btn">Buy now</a>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">
+            <i class='bx bx-chevron-left' ></i>
+        </button>
+        <button class="next" onclick="nextSlide()">
+            <i class='bx bx-chevron-right' ></i>
+        </button>
+        <br />
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="row1">
+            <div class="column company-name">
+                <p class="title">GREEN ROOM</p>
+                <div class="subdevider"></div>
+                <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cum
+                    sapiente, nisi enim necessitatibus architecto quisquam culpa
+                    corporis voluptates! Facilis quas dolorem distinctio iste error
+                    dolor necessitatibus magnam placeat molestiae!
+                </p>
+            </div>
+            <div class="column products">
+                <p class="title">PRODUCTS</p>
+                <div class="subdevider"></div>
+                <div class="content">
+                    <a href="#new-arrivals" class="link">New arrivals</a>
+                    <a href="#trailing-&-vining-plants" class="link">Trailing & Vining plants</a>
+                    <a href="#flowering-plants" class="link">Flowering plants</a>
+                    <a href="#aquatic-plants" class="link">Aquatic plants</a>
+                    <a href="#rare-plants" class="link">Rare plants</a>
+                    <a href="#succulents-&-caci" class="link">Succulents & Caci</a>
+                </div>
+            </div>
+            <div class="column useful-links">
+                <p class="title">USEFUL LINKS</p>
+                <div class="subdevider"></div>
+                <div class="content">
+                    <a href="#" class="link">Your account</a>
+                    <a href="#" class="link">Become an Affiliate</a>
+                    <a href="#" class="link">Shipping Rates</a>
+                    <a href="#" class="link">Help</a>
+                </div>
+            </div>
+            <div class="column contact">
+                <p class="title">CONTACT</p>
+                <div class="subdevider"></div>
+                <div class="content">
+                    <div class="subcontent">
+                        <i class='bx bx-home' ></i>
+                        <p> 132, Đông Hòa, Dĩ An, Bình Dương</p>
+                    </div>
+                    <div class="subcontent">
+                        <i class='bx bx-envelope' ></i>
+                        <p> info@gmail.com</p>
+                    </div>
+                    <div class="subcontent">
+                        <i class='bx bx-phone' ></i>
+                        <p> +84 123 456 789</p>
+                    </div>
+                    <div class="subcontent">
+                        <i class='bx bx-printer' ></i>
+                        <p> +84 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="devider"></div>
+
+        <div class="row2">
+            <div class="copyright">
+                <i class='bx bx-copyright' ></i>
+                <p> 2024 Copyright: GreenRoom.com</p>
+            </div>
+            <div class="social">
+                <i class='bx bxl-facebook' ></i>
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-google' ></i>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- home.js -->
+    <script src="../static/js/home.js"></script>
+    <script src="../static/serviceJs/home.js"></script>
+    <script src="../static/serviceJs/header.js"></script>
+    
+</body>
+
+</html>

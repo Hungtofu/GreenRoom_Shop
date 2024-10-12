@@ -1,0 +1,5 @@
+text_1: #ffffff
+text_2: #000000
+dark--green: #006936
+light--green: #7ed957
+light--white: #f1f1f1

@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 1200px;
+}
+
+.checkout-left, .checkout-right {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-left {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.checkout-right {
+    flex: 1;
+    position: sticky;
+    top: 20px; 
+    height: fit-content;
+}
+
+.express-checkout, .account, .delivery, .shipping-method, .payment, .add-tip {
+    margin-bottom: 20px;
+}
+
+.gpay-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.name-fields, .location-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-fields input, .location-fields input, .location-fields select {
+    width: 48%;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-method input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.credit-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-expiry-cvv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-expiry-cvv input {
+    width: 48%;
+}
+
+.pay-now {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.pay-now:hover {
+    background-color: #2980b9;
+}
+
+.order-summary {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.order-summary img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.order-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-totals p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.order-totals span {
+    font-weight: bold;
+}

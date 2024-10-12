@@ -1,0 +1,137 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    font-style: normal;
+}
+:root{
+    --text--1-color: #ffffff;
+    --text--2-color: #000000;
+    --dark--green-color: #006936;
+    --light--green-color: #7ed957;
+    --light--white-color: #f1f1f1;
+    --box--shadow--bottom-style1: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    --boder--dark--green-style1: 1px solid #006936;
+    --boder--dark--green-style2: 2px solid #006936;
+}
+
+body{
+    display: flex;
+    margin: auto;
+    height: 700px;
+    width: 1200px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.body-left{
+    flex: 1;
+    justify-content: end;
+}
+.body-right{
+    flex: 1;
+}
+
+.body-left .container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+}
+.body-left .container img{
+    border-radius: 50%;
+}
+.body-right .container{
+    width: 60%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.container .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.container .input-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.container .input-group input{
+    padding: 5px;
+    border-radius: 5px;
+    outline-color: var(--dark--green-color);
+    border: 1px solid rgb(200, 200, 200);
+}
+.container .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.body-right button{
+    padding: 5px;
+    background: var(--light--white-color);
+    color: var(--dark--green-color);
+    border: 1px solid rgb(200, 200, 200);
+    transition: all ease 0.2s;
+    margin-bottom: 1rem;
+}
+.body-right button:hover{
+    color: var(--light--white-color);
+    background: var(--dark--green-color);
+    border: 1px solid var(--dark--green-color);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    column-gap: 0.5rem;
+}
+
+
+.divider{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.divider .line{
+    border: 1px solid var(--dark--green-color);
+    width: 100%;
+}
+.divider p{
+    font-weight: 600;
+}
+
+.body-right .btn-facebook, .btn-google{
+    margin-bottom: 0.5rem;
+}
+
+.body-right .btn-facebook{
+    background: rgb(59, 89, 152);
+    color: var(--light--white-color);
+    border: 1px solid rgb(59, 89, 152);
+}
+.body-right .btn-facebook:hover{
+    background-color: rgb(52, 77, 131);
+    border: 1px solid rgb(59, 89, 152);
+}
+
+.body-right .btn-google{
+    background: rgb(219, 68, 55);
+    color: var(--light--white-color);
+    border: 1px solid rgb(219, 68, 55);
+}
+.body-right .btn-google:hover{
+    background: rgb(167, 53, 42);
+    border: 1px solid rgb(167, 53, 42);
+}

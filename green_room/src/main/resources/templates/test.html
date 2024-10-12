@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="../static/css/test.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="body-heading">
+        <div class="body-heading-left">
+            <img src="../static/images/Logo/Green_room_6.png" alt="">
+        </div>
+        <div class="body-heading-right">
+            <i class='bx bx-shopping-bag'></i>
+        </div>
+    </div>
+    <div class="checkout-container">
+        <div class="checkout-left">
+            <div class="account">
+                <label for="email">Account</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="checkbox" id="email-news" name="email-news">
+                <label for="email-news">Email me with news and offers</label>
+            </div>
+            <div class="delivery">
+                <p>Delivery</p>
+                <label for="country-region">Country/Region</label>
+                <select id="country-region" name="country-region">
+                    <option value="us">United States</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <div class="name-fields">
+                    <input type="text" id="first-name" name="first-name" placeholder="First name">
+                    <input type="text" id="last-name" name="last-name" placeholder="Last name">
+                </div>
+                <input type="text" id="company" name="company" placeholder="Company (optional)">
+                <input type="text" id="address" name="address" placeholder="Address">
+                <input type="text" id="apartment" name="apartment" placeholder="Apartment, suite, etc. (optional)">
+                <div class="location-fields">
+                    <input type="text" id="city" name="city" placeholder="City">
+                    <select id="state" name="state">
+                        <option value="ca">CA</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <input type="text" id="zip" name="zip" placeholder="ZIP code">
+                </div>
+                <input type="text" id="phone" name="phone" placeholder="Phone (optional)">
+                <input type="checkbox" id="save-address" name="save-address">
+                <label for="save-address">Use a saved address</label>
+                <input type="checkbox" id="text-news" name="text-news">
+                <label for="text-news">Text me with news and offers</label>
+            </div>
+            <div class="shipping-method">
+                <p>Shipping method</p>
+                <p>Enter your shipping address to view available shipping methods.</p>
+            </div>
+            <div class="payment">
+                <p>Payment</p>
+                <label for="payment-method">All transactions are secure and encrypted.</label>
+                <div class="payment-method">
+                    <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                    <label for="credit-card">Credit card</label>
+                    <div class="credit-card-info">
+                        <input type="text" id="card-number" name="card-number" placeholder="Card number">
+                        <div class="card-expiry-cvv">
+                            <input type="text" id="card-expiry" name="card-expiry" placeholder="Expiration date (MM / YY)">
+                            <input type="text" id="card-cvv" name="card-cvv" placeholder="Security code">
+                        </div>
+                        <input type="text" id="card-name" name="card-name" placeholder="Name on card">
+                        <input type="checkbox" id="billing-address" name="billing-address">
+                        <label for="billing-address">Use shipping address as billing address</label>
+                    </div>
+                    <input type="radio" id="paypal" name="payment-method" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+            </div>
+            <div class="add-tip">
+                <p>Add tip</p>
+                <input type="text" id="tip" name="tip" placeholder="Show your support for the team at House Plant Shop">
+            </div>
+            <button class="pay-now">Pay now</button>
+        </div>
+        <div class="checkout-right">
+            <div class="order-summary">
+                <img src="../static/images/products/plant.png" alt="Monstera 'Split-Leaf'">
+                <div class="order-details">
+                    <p class="order-name">Monstera 'Split-Leaf'</p>
+                    <p class="order-size">Chậu 4 inch</p>
+                    <p class="order-price">$19.99</p>
+                </div>
+            </div>
+            <div class="order-totals">
+                <p class="subtotal">Subtotal: <span>$19.99</span></p>
+                <p class="shipping">Shipping: <span>Enter shipping address</span></p>
+                <p class="total">Total: <span>$19.99</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
